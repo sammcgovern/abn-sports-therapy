@@ -14,15 +14,19 @@ const SubFooter = props => (
               </li>
               <li>
                 <strong>Email: </strong>
-{' '}
+                {' '}
                 <a href={`mailto:${props.data.site.siteMetadata.contact.email}`}>
                   {props.data.site.siteMetadata.contact.email}
                 </a>
               </li>
             </ul>
             <ul>
-              <li>
-                <a href="https://www.zerostatic.io">www.zerostatic.io</a>
+            <li className="copyright">
+                ©
+{' '}
+{new Date().getFullYear()}
+{' '}
+Sam McGovern
               </li>
             </ul>
           </div>

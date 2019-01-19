@@ -18,7 +18,7 @@ const Home = (props) => {
         />
       </Helmet>
       <div className="intro pb-4">
-        <h1 className="w-50 text-center">Aches or pains? ABN Sports Therapy can help</h1>
+        <h1 className="w-50 text-center">Tag line</h1>
        <Link className="button button-primary mt-2" to="/contact">
            Get in touch
         </Link>
@@ -35,61 +35,55 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-<div className="bg-grey">
-<div className="container pt-8 pt-md-10 pb-8 pb-md-10">
-        <div className="row justify-content-start">
-          <div className="col-12">
-            <h2 className="text-dark mb-3">Treatments</h2>
-          </div>
-          {markdown.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-6 col-lg-4 mb-2">
-              <div className="feature">
-                <a href={edge.node.frontmatter.path}>
-                  {edge.node.frontmatter.image && (
-                    <div className="feature-image">
-                      <img src={withPrefix(edge.node.frontmatter.image)} />
-                    </div>
-                  )}
-                  <h2 className="feature-title">{edge.node.frontmatter.title}</h2>
-                  </a>
-                  <div className="feature-content">{edge.node.excerpt}</div>
-                
-              </div>
+      <div className="bg-grey">
+        <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+          <div className="row justify-content-start">
+            <div className="col-12">
+              <h2 className="text-dark mb-3">Treatments</h2>
             </div>
-          ))}
-          <div className="col-12 text-center">
-            <Link className="button button-primary mt-2" to="/treatments">
-              View All treatments
-            </Link>
+            {markdown.map(edge => (
+              <div key={edge.node.frontmatter.path} className="col-12 col-md-6 col-lg-4 mb-2">
+                <div className="feature">
+                  <a href={edge.node.frontmatter.path}>
+                    {edge.node.frontmatter.image && (
+                      <div className="feature-image">
+                        <img src={withPrefix(edge.node.frontmatter.image)} />
+                      </div>
+                    )}
+                    <h2 className="feature-title">{edge.node.frontmatter.title}</h2>
+                    </a>
+                    <div className="feature-content">{edge.node.excerpt}</div>
+                  
+                </div>
+              </div>
+            ))}
+            <div className="col-12 text-center">
+              <Link className="button button-primary mt-2" to="/treatments">
+                View All treatments
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
-
-
-</div>
-      
-
-      {/* <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
-        <div className="row justify-content-center">
+      <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+        <div className="row justify-content-start">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-4">Our Features</h2>
+            <h2 className="text-dark mb-3">Testimonials</h2>
           </div>
-          {json.map(edge => (
-            <div key={edge.node.id} className="col-12 col-md-6 col-lg-4 mb-2">
-              <div className="feature">
-                {edge.node.image && (
-                  <div className="feature-image">
-                    <img src={withPrefix(edge.node.image)} />
-                  </div>
-                )}
-                <h2 className="feature-title">{edge.node.title}</h2>
-                <div className="feature-content">{edge.node.description}</div>
-              </div>
-            </div>
-          ))}
         </div>
-      </div> */}
+      </div>
+
+      <div className="bg-grey">
+        <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+          <div className="row justify-content-start">
+            <div className="col-12">
+              <h2 className="text-dark mb-3">Contact</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+     
     </Layout>
   );
 };
