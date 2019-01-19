@@ -1,8 +1,8 @@
 ---
-path: '/treatments/business-advisory'
-title: 'Business Advisory'
+path: '/treatments/injury-treatment'
+title: 'Injury treatment'
 date: 2018-11-28T15:14:39+10:00
-image: '/treatments/default.png'
+image: '/treatments/injury-treatment.jpg'
 featured: true
 ---
 

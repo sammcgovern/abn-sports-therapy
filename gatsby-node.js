@@ -8,7 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           query {
-            treatments: allMarkdownRemark(
+            services: allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/treatments/" } }
               sort: { fields: [frontmatter___date], order: DESC }
             ) {
@@ -59,7 +59,7 @@ exports.createPages = ({ graphql, actions }) => {
           }
         `,
       ).then((result) => {
-        result.data.treatments.edges.forEach(({ node }) => {
+        result.data.services.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/treatment.js');
           createPage({
             path: node.frontmatter.path,

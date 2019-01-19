@@ -4,6 +4,7 @@ import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 
 const treatment = ({ data }) => {
+  console.log(data)
   const { title } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
   return (

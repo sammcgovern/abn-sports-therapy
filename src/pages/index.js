@@ -18,32 +18,42 @@ const Home = (props) => {
         />
       </Helmet>
       <div className="intro pb-4">
-        <div className="container">
-          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper odio vel leo porttitor, eget mattis leo volutpat. Nunc id rhoncus tellus, vel semper odio. Proin urna nisl, blandit vitae lectus sed, interdum sodales quam.
-          </p>
-        </div>
+        <h1 className="w-50 text-center">Aches or pains? ABN Sports Therapy can help</h1>
+       <Link className="button button-primary mt-2" to="/contact">
+           Get in touch
+        </Link>
       </div>
 
-      <div className="container pt-2 pb-8">
-        <Call button />
-      </div>
-
-      <div className="container pt-8 pt-md-10">
+      <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
         <div className="row justify-content-start">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-3">Treatments</h2>
+            <h2 className="text-center text-dark mb-3">What does ABN Sports Therapy do?</h2>
+          </div>
+          
+          <div className="col-12 text-center">
+            <p className="text-center">Lorem ipsum dolor sit amet, vocent regione persius vix in, ad liber debet nihil vim. Paulo similique an pro, detracto perfecto voluptaria sea eu, eu duo essent sententiae. Cum te scaevola cotidieque. Dicta viderer reprehendunt ut cum, at ius vidit erant officiis. Ex paulo eripuit mei, meis tantas eum et, eam solet laudem ut. Nam audiam postulant no, mel at summo fierent signiferumque, vivendum honestatis scripserit ei mei.</p>
+          </div>
+        </div>
+      </div>
+<div className="bg-grey">
+<div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+        <div className="row justify-content-start">
+          <div className="col-12">
+            <h2 className="text-dark mb-3">Treatments</h2>
           </div>
           {markdown.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
-              <div className="card treatment treatment-teaser">
-                <div className="card-content">
-                  <h2>
-                    <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
-                  </h2>
-                  <p>{edge.node.excerpt}</p>
-                </div>
+            <div key={edge.node.frontmatter.path} className="col-12 col-md-6 col-lg-4 mb-2">
+              <div className="feature">
+                <a href={edge.node.frontmatter.path}>
+                  {edge.node.frontmatter.image && (
+                    <div className="feature-image">
+                      <img src={withPrefix(edge.node.frontmatter.image)} />
+                    </div>
+                  )}
+                  <h2 className="feature-title">{edge.node.frontmatter.title}</h2>
+                  </a>
+                  <div className="feature-content">{edge.node.excerpt}</div>
+                
               </div>
             </div>
           ))}
@@ -55,7 +65,12 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
+
+
+</div>
+      
+
+      {/* <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <div className="row justify-content-center">
           <div className="col-12">
             <h2 className="title-3 text-dark mb-4">Our Features</h2>
@@ -74,7 +89,7 @@ const Home = (props) => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };
@@ -92,6 +107,7 @@ export const query = graphql`
             path
             title
             date(formatString: "DD MMMM YYYY")
+            image
           }
           excerpt
         }

@@ -1,6 +1,7 @@
 .intro {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-top: 60px;
   padding-bottom: 300px;
@@ -21,18 +22,18 @@
     font-size: 2.4rem;
     line-height: 1.2;
     font-family: $font-family-heading;
-    width: 70%;
-    @include media-breakpoint-up(sm) {
-      width: 70%;
-    }
-    @include media-breakpoint-up(md) {
-      font-size: 3rem;
-      width: 70%;
-    }
-    @include media-breakpoint-up(lg) {
-      font-size: 3rem;
-      width: 50%;
-    }
+    // width: 70%;
+    // @include media-breakpoint-up(sm) {
+    //   width: 70%;
+    // }
+    // @include media-breakpoint-up(md) {
+    //   font-size: 3rem;
+    //   width: 70%;
+    // }
+    // @include media-breakpoint-up(lg) {
+    //   font-size: 3rem;
+    //   width: 50%;
+    // }
   }
   p {
     width: 80%;
@@ -58,10 +59,10 @@
 
 
 .page-home{
-  h1 {
-    color: $white;
+  .intro{
+    min-height: 90vh;
   }
-  p{
+  h1 {
     color: $white;
   }
 }

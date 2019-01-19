@@ -1,8 +1,8 @@
 ---
-path: '/treatments/tax-preperation'
-title: 'Tax Preperation'
+path: '/treatments/rehabilitation-techniques'
+title: 'Rehabilitation techniques'
 date: 2018-11-18T12:33:46+10:00
-image: '/treatments/noun_1013177.png'
+image: '/treatments/rehabilitation-techniques.jpg'
 draft: false
 featured: true
 weight: 2

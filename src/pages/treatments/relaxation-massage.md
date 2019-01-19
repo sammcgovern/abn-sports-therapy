@@ -1,8 +1,8 @@
 ---
-path: '/treatments/business-sales'
-title: 'Business Sales'
+path: '/treatments/relaxation-massage'
+title: 'Relaxation massage'
 date: 2018-11-28T15:15:26+10:00
-image: '/treatments/default.png'
+image: '/treatments/relaxation-massage.jpg'
 featured: true
 draft: false
 ---

@@ -4,16 +4,10 @@ import Layout from '../../layouts/index';
 import Call from '../../components/Call';
 
 const Contact = props => (
-  <Layout bodyClass="page-contact">
+  <Layout bodyClass="page-about" >
     <SEO title="Contact" />
-    <div className="intro intro-small">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h1>About me</h1>
-          </div>
-        </div>
-      </div>
+    <div className="intro intro-small intro-about">
+      <h1>About me</h1>
     </div>
     <div className="container">
       <div className="row">

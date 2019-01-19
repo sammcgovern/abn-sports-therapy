@@ -1,8 +1,8 @@
 ---
-path: '/treatments/mergers'
-title: 'Mergers'
+path: '/treatments/sports-massage'
+title: 'Sports massage'
 date: 2018-11-28T15:15:34+10:00
-image: '/treatments/default.png'
+image: '/treatments/sports-massage.jpg'
 featured: true
 draft: false
 ---

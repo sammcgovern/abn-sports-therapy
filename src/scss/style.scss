@@ -65,11 +65,17 @@
 
 // Pages
 @import 'pages/home';
+@import 'pages/about';
 @import 'pages/team/page-teams';
 @import 'pages/testimonials/page-testimonials';
 @import 'pages/testimonials/testimonial';
 @import 'pages/treatments/page-treatments';
 @import 'pages/treatments/page-treatment';
+
+
+//Overall styles
+@import 'overall-style.scss'
+
 
 // Display breakpoints for DEV
 // body:after {
