@@ -1,20 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Serif',
+    title: 'ABN Sports Therapy',
     description: 'my theme',
     contact: {
-      phone: 'XXX XXX XXX',
-      email: 'zerostaticthemes@gmail.com',
+      phone: '07540731115',
+      email: 'abnsportstherapy@gmail.com',
     },
     menuLinks: [
       {
-        name: 'Services',
-        link: '/services',
+        name: 'About',
+        link: '/about',
       },
       {
-        name: 'Team',
-        link: '/team',
+        name: 'Treatments',
+        link: '/treatments',
       },
+      // {
+      //   name: 'Team',
+      //   link: '/team',
+      // },
       {
         name: 'Testimonials',
         link: '/testimonials',
