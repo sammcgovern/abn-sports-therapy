@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../layouts/index';
 import Call from '../components/Call';
+import styled from 'styled-components'
 
 const Home = (props) => {
   const markdown = props.data.allMarkdownRemark.edges;
@@ -80,6 +81,7 @@ const Home = (props) => {
             <div className="col-12">
               <h2 className="text-dark mb-3">Contact</h2>
             </div>
+            
           </div>
         </div>
       </div>

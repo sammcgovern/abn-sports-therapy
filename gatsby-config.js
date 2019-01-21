@@ -15,10 +15,10 @@ module.exports = {
         name: 'Treatments',
         link: '/treatments',
       },
-      // {
-      //   name: 'Team',
-      //   link: '/team',
-      // },
+      {
+        name: 'Prices',
+        link: '/prices',
+      },
       {
         name: 'Testimonials',
         link: '/testimonials',

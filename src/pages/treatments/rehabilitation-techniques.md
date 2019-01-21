@@ -2,7 +2,7 @@
 path: '/treatments/rehabilitation-techniques'
 title: 'Rehabilitation techniques'
 date: 2018-11-18T12:33:46+10:00
-image: '/treatments/rehabilitation-techniques.jpg'
+image: '/treatments/rehabilitation.jpg'
 draft: false
 featured: true
 weight: 2

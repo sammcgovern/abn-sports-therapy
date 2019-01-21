@@ -53,16 +53,20 @@
   }
 }
 .intro-small {
-  padding-top: 100px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
-
+.page {
+  h1{
+    color: $white;
+  }
+}
 .page-home{
   .intro{
     min-height: 90vh;
   }
-  h1 {
-    color: $white;
-  }
+  // h1 {
+  //   color: $white;
+  // }
 }

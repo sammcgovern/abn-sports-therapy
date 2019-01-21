@@ -8,25 +8,18 @@ const Testimonials = (props) => {
   return (
     <Layout bodyClass="page-testimonials">
       <SEO title="Testimonials" />
-      <div className="intro">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1>Testimonals</h1>
-            </div>
-          </div>
-        </div>
+      <div className="intro intro-small intro-testimonials">
+        <h1>Testimonials</h1>
       </div>
 
-      <div className="container pb-6">
+      <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
         <div className="row">
           {testimonials.map(edge => (
             <div key={edge.node.frontmatter.path} className="col-12 col-md-6 mb-1">
               <div className="testimonial">
                 <div className="testimonials-meta">
-                  <h2 className="testimonials-title">{edge.node.frontmatter.title}</h2>
-                  <p className="testimonials-name">{edge.node.frontmatter.name}</p>
-                  <p className="testimonials-jobtitle">{edge.node.frontmatter.jobtitle}</p>
+                  <h2 className="testimonials-name">{edge.node.frontmatter.name}</h2>
+                  <p className="testimonials-treatment">{edge.node.frontmatter.treatment}</p>
                 </div>
                 <div
                   className="testimonials-content"
@@ -54,7 +47,7 @@ export const query = graphql`
             title
             path
             name
-            jobtitle
+            treatment
           }
         }
       }

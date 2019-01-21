@@ -6,7 +6,19 @@ import Call from '../../components/Call';
 const Contact = props => (
   <Layout bodyClass="page-contact">
     <SEO title="Contact" />
-    <div className="intro intro-small">
+    <div className="intro intro-small intro-contact">
+      <h1>Contact</h1>
+    </div>
+    <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+      
+    </div>
+
+
+
+
+
+
+    {/* <div className="intro intro-small">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -70,7 +82,7 @@ const Contact = props => (
           </table>
         </div>
       </div>
-    </div>
+    </div> */}
   </Layout>
 );
 
