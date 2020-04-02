@@ -1,6 +1,6 @@
 ---
-path: '/treatments/rehabilitation-techniques'
-title: 'Rehabilitation techniques'
+path: '/treatments/rehabilitation'
+title: 'REHABILITATION'
 date: 2018-11-18T12:33:46+10:00
 image: '/treatments/rehabilitation.jpg'
 draft: false

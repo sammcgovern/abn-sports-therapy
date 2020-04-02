@@ -1,22 +1,28 @@
 .feature {
   height: 100%;
-  border: 2px solid #eaeaea;
-  padding: 20px;
-  background-color: #ffffff;
   display: flex;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  align-items: flex-start;
+  h3 {
+    color: $secondary;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-family: $font-family-heading;
+    font-weight: $font-weight-bold;
+  }
   .feature-image {
     flex: 0 0 auto;
-    max-height:200px;
+    max-height:250px;
     display: flex;
     margin-bottom: 20px;
     text-align: center;
+    background:black;
   }
   img {
     width: 100%;
     height: auto;
+    opacity: 0.6;
   }
   .feature-title {
     font-size: 1.5rem;
@@ -24,10 +30,10 @@
     line-height: 1.2;
   }
   .feature-content {
-    margin-bottom: 0;
+    margin-bottom: 30px;
     margin-top: auto;
     p {
-      margin: 0;
+      margin: 10px 0px 20px 0px;
       strong {
         color: $secondary;
         text-transform: uppercase;

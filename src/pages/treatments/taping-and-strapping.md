@@ -1,6 +1,6 @@
 ---
 path: '/treatments/taping-and-strapping'
-title: "Taping and strapping"
+title: "TAPING"
 date: 2018-11-28T15:14:54+10:00
 image: '/treatments/taping-and-strapping.jpg'
 featured: true

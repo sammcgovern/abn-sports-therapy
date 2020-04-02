@@ -1,6 +1,6 @@
 ---
 path: '/treatments/injury-treatment'
-title: 'Injury treatment'
+title: 'INJURY TREATMENT'
 date: 2018-11-28T15:14:39+10:00
 image: '/treatments/injury-treatment.jpg'
 featured: true

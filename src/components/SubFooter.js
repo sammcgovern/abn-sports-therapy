@@ -26,7 +26,7 @@ const SubFooter = props => (
 {' '}
 {new Date().getFullYear()}
 {' '}
-Sam McGovern
+ABN Sports Therapy
               </li>
             </ul>
           </div>

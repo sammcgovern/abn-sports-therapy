@@ -1,7 +1,34 @@
 .page-home {
-  background: url('../images/background6.jpg');
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ),url('../images/taping.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-height: 100vh;
+  .flex{
+    display: flex;
+    align-items: center;
+    .right{
+      margin-left: 20px;
+    }
+    &.end{
+justify-content: space-between;
+    }
+  }
+  .carousel-indicators{
+    margin-top: 10px
+  }
+  .carousel-slide{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .carousel-caption{
+      padding-bottom:30px;
+    }
+  }
+  
 }
