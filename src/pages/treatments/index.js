@@ -12,35 +12,46 @@ const Treatments = (props) => {
       <div className="intro intro-small intro-treatments">
         <h1>Treatments</h1>
       </div>
-    
-
-     
-
-    
 
       <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
-        <div className="col-12 text-center pb-4">
-          <p className="text-center">Lorem ipsum dolor sit amet, vocent regione persius vix in, ad liber debet nihil vim. Paulo similique an pro, detracto perfecto voluptaria sea eu, eu duo essent sententiae. Cum te scaevola cotidieque. Dicta viderer reprehendunt ut cum, at ius vidit erant officiis. Ex paulo eripuit mei, meis tantas eum et, eam solet laudem ut. Nam audiam postulant no, mel at summo fierent signiferumque, vivendum honestatis scripserit ei mei.</p>
+        <div className="row justify-content-start pb-4">
+          <div className="col-12">
+            <h2 className="text-dark">Some of the treatements we offer</h2>
+              <p>Here at ABN, we are qualified in offering a number of different treatments. If you are unsure, contact us or see below.</p>
+          </div>
         </div>
         <div className="row">
           {treatments.map(edge => (
-            <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
+          <div key={edge.node.frontmatter.path} className="col-12 col-md-6 col-lg-4 mb-2">
               <div className="feature">
-                  <a href={edge.node.frontmatter.path}>
-                    {edge.node.frontmatter.image && (
-                      <div className="feature-image">
-                        <img src={edge.node.frontmatter.image} />
-                      </div>
-                    )}
-                    <h2 className="feature-title">{edge.node.frontmatter.title}</h2>
-                    </a>
-                    <div className="feature-content">{edge.node.excerpt}</div>
+                  {edge.node.frontmatter.image && (
+                  <div className="feature-image">
+                    <img src={edge.node.frontmatter.image} />
+                  </div>
+                )}
+                <h3>{edge.node.frontmatter.title}</h3>
+                <div className="feature-content">
                   
+                  <p>{edge.node.excerpt}</p>
+                
+                <Link className="button button-primary" to={edge.node.frontmatter.path}>
+                  VIEW {edge.node.frontmatter.title}
+                </Link>
                 </div>
-            </div>
+                
+            </div> 
+          </div>
           ))}
         </div>
-      </div>
+        <div className=" pt-8  row justify-content-start">
+          <div className="col-12">
+            <h2 className="text-dark">What to expect</h2>
+              <p>FAQs maybe?</p>
+          </div>
+        </div>
+          </div>
+
+    
     </Layout>
   );
 };

@@ -20,10 +20,6 @@ module.exports = {
         link: '/prices',
       },
       {
-        name: 'Testimonials',
-        link: '/testimonials',
-      },
-      {
         name: 'Contact',
         link: '/contact',
       },

@@ -7,8 +7,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = (props) => {
+  
   const markdown = props.data.allMarkdownRemark.edges;
   const json = props.data.allFeaturesJson.edges;
+  console.log(json)
   return (
     <Layout bodyClass="page-home" id='color-overlay'>
       <SEO title="Home" />
@@ -29,7 +31,7 @@ const Home = (props) => {
         <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
           <div className="row justify-content-start">
             <div className="flex">
-              <img className='col-4' src='./general/abn-family-photo.png' />
+              <img className='col-4' src='general/abn-family-photo.png' />
               <div className="col-8 right">
                 <h2 className="text-dark mb-3">OUR STORY</h2>
                 <p>My name is Alix and I work from home or mobile and am fully flexible. I also work evening and weekends around your work and family life. I offer different types of massage tailored to your needs to help with: Pain, stiffness, discomfort and mobility. I also offer Advice and support for injury management or injury maintenance.</p>
@@ -80,33 +82,20 @@ const Home = (props) => {
           <div className="row justify-content-start">
             <div className="col-12">
               <h2 className="mb-3">Testimonials</h2>
+              <p>Many people have benefited from our services over the past couple of years.</p>
             </div>
             <div className="col-12">
               <Carousel>
+              {json.map(testimonial => (
                 <Carousel.Item>
                   <div className='carousel-slide'> 
                     <Carousel.Caption>
-                      <p>30 minute deep tissue massage - Had the most wonderful back massage, thank you so much Alix! It was great that I could have it done in my own home. You certainly know what you are doing and you are amazing. Can’t wait until next time</p>
-                      <h3>Maggie</h3>
+                      <p>{testimonial.node.description}</p>
+                      <h3>{testimonial.node.title} - {testimonial.node.treatment} </h3>
                     </Carousel.Caption>
                   </div>
                 </Carousel.Item>
-                <Carousel.Item>
-                  <div className='carousel-slide'> 
-                    <Carousel.Caption>
-                      <p>1 hour deep tissue massage - I’ve been in tonight to see Alix and once again she’s worked wonders. Listens to what problems your dealing with and also highlights other niggles. Highly recommended</p>
-                      <h3>Liam</h3>
-                    </Carousel.Caption>
-                  </div>
-                </Carousel.Item>
-                <Carousel.Item>
-                  <div className='carousel-slide'> 
-                    <Carousel.Caption>
-                      <p>30 minute sports massage - Friendly, affordable and extremely knowledgeable. I will definitely be coming back to ABN Sport Therapy in the future. Highly recommend</p>
-                      <h3>Emily</h3>
-                    </Carousel.Caption>
-                  </div>
-                </Carousel.Item>
+              ))}
               </Carousel>
             </div>
           </div>
@@ -114,36 +103,42 @@ const Home = (props) => {
       </div>
       <div>
         <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
-          <div className="row justify-content-start">
+        <div className="row justify-content-start">
             <div className="col-12">
-              <h2 className="text-dark mb-3">Contact</h2>
+              <h2 className="text-dark">Get in touch</h2>
+              <p>To book an appointment, or just get some advice please contact us on the information below.</p>
             </div>
-            <div className="col-12">
-              <p>Please message and I will be more than happy to help. Also, you don't have to take part in sports to see a sports therapist! I'm here to help.</p>
             </div>
-            <div className="col-12 flex">
-              <div className='col-6'>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.8738789889508!2d-1.063621084390983!3d54.5357190926583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487eef5efb6595fd%3A0xc45585dd7cf5667a!2s15%20Maple%20Gardens%2C%20Guisborough!5e0!3m2!1sen!2suk!4v1585839212445!5m2!1sen!2suk" width="100%" height="300px" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-              </div>
+          <div className="pt-4 row justify-content-start">
+            <div className="col-6">
+            <h4 className='mb-4'>Find us</h4>
+            <span><strong>ABN Sports Therapy</strong></span>
+              <br/>
+              <span>15 Maple Gardens</span><br/>
+              <span>Guisborough</span><br/>
+              <span>TS14 6NY</span>
+            </div> 
               <div className='col-6'> 
-                <div className='flex mb-4'>
-                  <img width='25px' height='25px' src='./general/facebook.png'  className='flex mr-4'/>
+                <h4 className='mb-4'>For general enquiries or to book an appointment</h4>
+                <div className='flex mb-2'>
+                  <img width='25px' height='25px' src='general/facebook.png'  className='flex mr-4'/>
                   <a src="https://www.facebook.com/ABNSportTherapy/" target='_blank'>@ABNSportTherapy</a>
                 </div>
-                <div className='flex mb-4'>
-                  <img width='25px' height='25px'src='./general/call.png'  className='flex mr-4'/>
+                <div className='flex mb-2'>
+                  <img width='25px' height='25px'src='general/call.png'  className='flex mr-4'/>
                   <a src="https://www.facebook.com/ABNSportTherapy/" target='_blank'>07540731115</a>
                 </div>
-                <div className='flex mb-4'>
-                  <img width='25px' height='25px'src='./general/gmail.png' className='flex mr-4'/>
+                <div className='flex mb-2'>
+                  <img width='25px' height='25px'src='general/gmail.png' className='flex mr-4'/>
                   <a src="https://mail.google.com/" target='_blank'>abnsportstherapy@gmail.com</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2314.8738789889508!2d-1.063621084390983!3d54.5357190926583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487eef5efb6595fd%3A0xc45585dd7cf5667a!2s15%20Maple%20Gardens%2C%20Guisborough!5e0!3m2!1sen!2suk!4v1585839212445!5m2!1sen!2suk" width="100%" height="400px" frameborder="0"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
-     
     </Layout>
   );
 };
@@ -173,7 +168,7 @@ export const query = graphql`
           id
           title
           description
-          image
+          treatment
         }
       }
     }

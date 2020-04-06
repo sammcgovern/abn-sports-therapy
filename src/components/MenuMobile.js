@@ -9,6 +9,9 @@ const MenuMobile = props => {
       className={`main-menu-mobile ${props.active ? 'open' : ''}`}
     >
       <ul>
+      <li key='Home'>
+            <Link to='/'>Home</Link>
+          </li>
         {menuLinks.map(link => (
           <li key={link.name}>
             <Link to={link.link}>{link.name}</Link>

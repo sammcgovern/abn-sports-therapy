@@ -1,17 +1,17 @@
 [
   {
-    "title": "",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "/features/noun_branding_1885335.svg"
+    "title": "Daisy Thomas11",
+    "description": "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in tempus libero. Vestibulum pellentesque venenatis dictum. Proin eu turpis id massa sagittis porta ut at nunc. Nullam congue eu nibh sed dictum. Maecenas nec ultrices velit, at maximus ante. Fusce sed sapien dolor. Etiam semper diam sit amet ultrices venenatis.",
+    "treatment": "1Injury treatment"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "/features/noun_The Process_1885341.svg"
+    "title": "Daisy Thomas22",
+    "description": "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in tempus libero. Vestibulum pellentesque venenatis dictum. Proin eu turpis id massa sagittis porta ut at nunc. Nullam congue eu nibh sed dictum. Maecenas nec ultrices velit, at maximus ante. Fusce sed sapien dolor. Etiam semper diam sit amet ultrices venenatis.",
+    "treatment": "2Injury treatment"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "/features/noun_3d modeling_1885342.svg"
+    "title": "Daisy Thomas33",
+    "description": "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in tempus libero. Vestibulum pellentesque venenatis dictum. Proin eu turpis id massa sagittis porta ut at nunc. Nullam congue eu nibh sed dictum. Maecenas nec ultrices velit, at maximus ante. Fusce sed sapien dolor. Etiam semper diam sit amet ultrices venenatis.",
+    "treatment": "3Injury treatment"
   }
 ]

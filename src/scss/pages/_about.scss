@@ -1,9 +1,22 @@
 .page-about{
 
     .intro-about{
-        background: url('../images/background.jpg');
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+          ), url('../images/taping.jpeg');
         background-size: cover;
-        background-position: center;
-        height: 50vh;
+        background-position: 20%;
+        height: 30vh;
     }
+    .flex{
+        display: flex;
+        align-items: center;
+        .right{
+          margin-left: 20px;
+        }
+        &.end{
+            justify-content: space-between;
+        }
+      }
 }
