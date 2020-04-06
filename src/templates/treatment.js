@@ -20,21 +20,21 @@ const treatment = ({ data }) => {
             <h2 className="text-dark">What is {props.lcTitle}</h2>
             <p>{props.whatIsIt}</p>
           </div>
-          <img src={props.image} className='col-6'/>
+          <img src={props.whatIsItImage} className='col-6'/>
         </div>
-        <div className="pt-4 row justify-content-start pb-4">
-          <img src={props.image} className='col-6'/>
+        <div className="pt-8 row justify-content-start pb-4">
+          <img src={props.howCanIHelpImage} className='col-6'/>
           <div className="col-6">
             <h2 className="text-dark">How Can ABN Help</h2>
             <p>{props.howCanIHelp}</p>
           </div>
         </div>
-        <div className="pt-4 row justify-content-start pb-4">
+        <div className="pt-8 row justify-content-start pb-4">
           <div className="col-6">
             <h2 className="text-dark">What to expect</h2>
             <p>{props.whatToExpect}</p>
           </div>
-          <img src={props.image} className='col-6'/>
+          <img src={props.whatToExpectImage} className='col-6'/>
         </div>
       </div>
     </Layout>
@@ -50,8 +50,11 @@ export const query = graphql`
         path
         image
         whatIsIt
+        whatIsItImage
         howCanIHelp
+        howCanIHelpImage
         whatToExpect
+        whatToExpectImage
       }
       html
     }

@@ -18,13 +18,14 @@ const Contact = props => (
               <p>I Qualified as a sport therapist from Teesside university with a BSc(Hons) Degree. With this I have spent 5 seasons at Guisborough Town FC and 1 season with Guisborough Rugby Club. </p>
               <p>Alongside working for myself I am also the sports therapist for TNT Fitness and run a clinic at Guisborough Town FC. Although my background is sports the majority of my client base have non sports related conditions. </p>
           </div>
-         <img className='col-4' src='general/abn-family-photo.png' />
+         <img className='col-4' src='abn-family-photo.png' />
         </div>
         <div className="col-12">
         <h3 className="text-dark">My Qualifications</h3>
           <ul>
             <li>University degree (2017)</li>
             <li>Pregnancy massage course</li>
+            <li>...</li>
           </ul>
         </div>
       </div>

@@ -7,6 +7,9 @@ image: '/treatments/taping-and-strapping.jpg'
 featured: true
 draft: false
 whatIsIt: 'what is it'
+whatIsItImage: '/treatments/taping-and-strapping.jpg'
 howCanIHelp: 'how can i help'
+howCanIHelpImage : '/treatments/taping2.jpg'
 whatToExpect: 'what to expect'
+whatToExpectImage: '/treatments/taping3.jpg'
 ---

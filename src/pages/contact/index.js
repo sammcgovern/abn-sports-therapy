@@ -23,15 +23,15 @@ const Contact = props => (
           </div>
           <div className='col-6'> 
             <div className='flex mb-4'>
-              <img width='25px' height='25px' src='general/facebook.png'  className='flex mr-4'/>
+              <img width='25px' height='25px' src='facebook.png'  className='flex mr-4'/>
               <a src="https://www.facebook.com/ABNSportTherapy/" target='_blank'>@ABNSportTherapy</a>
             </div>
             <div className='flex mb-4'>
-              <img width='25px' height='25px'src='general/call.png'  className='flex mr-4'/>
+              <img width='25px' height='25px'src='call.png'  className='flex mr-4'/>
               <a src="https://www.facebook.com/ABNSportTherapy/" target='_blank'>07540731115</a>
             </div>
             <div className='flex mb-4'>
-              <img width='25px' height='25px'src='general/gmail.png' className='flex mr-4'/>
+              <img width='25px' height='25px'src='gmail.png' className='flex mr-4'/>
               <a src="https://mail.google.com/" target='_blank'>abnsportstherapy@gmail.com</a>
             </div>
           </div>

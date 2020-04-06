@@ -7,6 +7,9 @@ image: '/treatments/rehabilitation.jpg'
 draft: false
 featured: true
 whatIsIt: 'what is it'
+whatIsItImage: '/treatments/rehab2.jpg'
 howCanIHelp: 'how can i help'
+howCanIHelpImage: '/treatments/rehabilitation.jpg'
 whatToExpect: 'what to expect'
+whatToExpectImage: '/treatments/rehab3.jpg'
 ---

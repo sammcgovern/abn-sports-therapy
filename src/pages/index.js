@@ -31,7 +31,7 @@ const Home = (props) => {
         <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
           <div className="row justify-content-start">
             <div className="flex">
-              <img className='col-4' src='general/abn-family-photo.png' />
+              <img className='col-4' src='abn-family-photo.png' />
               <div className="col-8 right">
                 <h2 className="text-dark mb-3">OUR STORY</h2>
                 <p>My name is Alix and I work from home or mobile and am fully flexible. I also work evening and weekends around your work and family life. I offer different types of massage tailored to your needs to help with: Pain, stiffness, discomfort and mobility. I also offer Advice and support for injury management or injury maintenance.</p>
@@ -121,15 +121,15 @@ const Home = (props) => {
               <div className='col-6'> 
                 <h4 className='mb-4'>For general enquiries or to book an appointment</h4>
                 <div className='flex mb-2'>
-                  <img width='25px' height='25px' src='general/facebook.png'  className='flex mr-4'/>
+                  <img width='25px' height='25px' src='facebook.png'  className='flex mr-4'/>
                   <a src="https://www.facebook.com/ABNSportTherapy/" target='_blank'>@ABNSportTherapy</a>
                 </div>
                 <div className='flex mb-2'>
-                  <img width='25px' height='25px'src='general/call.png'  className='flex mr-4'/>
+                  <img width='25px' height='25px'src='call.png'  className='flex mr-4'/>
                   <a src="https://www.facebook.com/ABNSportTherapy/" target='_blank'>07540731115</a>
                 </div>
                 <div className='flex mb-2'>
-                  <img width='25px' height='25px'src='general/gmail.png' className='flex mr-4'/>
+                  <img width='25px' height='25px'src='gmail.png' className='flex mr-4'/>
                   <a src="https://mail.google.com/" target='_blank'>abnsportstherapy@gmail.com</a>
                 </div>
               </div>

@@ -7,6 +7,9 @@ image: '/treatments/relaxation-massage.jpg'
 featured: true
 draft: false
 whatIsIt: 'what is it'
+whatIsItImage: '/treatments/relaxation-massage.jpg'
 howCanIHelp: 'how can i help'
+howCanIHelpImage : '/treatments/relaxation-massage4.jpg'
 whatToExpect: 'what to expect'
+whatToExpectImage: '/treatments/relaxation-massage3.jpg'
 ---
