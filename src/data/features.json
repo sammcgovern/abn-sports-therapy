@@ -1,17 +1,17 @@
 [
   {
-    "title": "Daisy Thomas11",
-    "description": "1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in tempus libero. Vestibulum pellentesque venenatis dictum. Proin eu turpis id massa sagittis porta ut at nunc. Nullam congue eu nibh sed dictum. Maecenas nec ultrices velit, at maximus ante. Fusce sed sapien dolor. Etiam semper diam sit amet ultrices venenatis.",
-    "treatment": "1Injury treatment"
+    "title": "Testimonial 1",
+    "description": "Testimonial 1",
+    "treatment": "Treatment 1"
   },
   {
-    "title": "Daisy Thomas22",
-    "description": "2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in tempus libero. Vestibulum pellentesque venenatis dictum. Proin eu turpis id massa sagittis porta ut at nunc. Nullam congue eu nibh sed dictum. Maecenas nec ultrices velit, at maximus ante. Fusce sed sapien dolor. Etiam semper diam sit amet ultrices venenatis.",
-    "treatment": "2Injury treatment"
+    "title": "Testimonial 2",
+    "description": "Testimonial 2",
+    "treatment": "Treatment 3"
   },
   {
-    "title": "Daisy Thomas33",
-    "description": "3Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in tempus libero. Vestibulum pellentesque venenatis dictum. Proin eu turpis id massa sagittis porta ut at nunc. Nullam congue eu nibh sed dictum. Maecenas nec ultrices velit, at maximus ante. Fusce sed sapien dolor. Etiam semper diam sit amet ultrices venenatis.",
-    "treatment": "3Injury treatment"
+    "title": "Testimonial 3",
+    "description": "Testimonial 3",
+    "treatment": "Treatment 3"
   }
 ]
