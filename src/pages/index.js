@@ -28,30 +28,26 @@ const Home = (props) => {
         </Link>
       </div>
       <div className="bg-grey">
-        <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
-          <div className="row justify-content-start">
-            <div className="flex">
-              <img className='col-4' src='abn-family-photo.png' />
-              <div className="col-8 right">
-                <h2 className="text-dark mb-3">OUR STORY</h2>
-                <p>My name is Alix and I work from home or mobile and am fully flexible. I also work evening and weekends around your work and family life. I offer different types of massage tailored to your needs to help with: Pain, stiffness, discomfort and mobility. I also offer Advice and support for injury management or injury maintenance.</p>
-              </div>
+        <div className="container p-5 pt-8 pt-md-10 pb-8 pb-md-10">
+          <div className="row justify-content-center align-items-center">
+            <img className='col-md-4' src='abn-family-photo.png' />
+            <div className="col-md-8 right pt-3">
+              <h2 className="text-dark mb-3">Our Story</h2>
+              <p>My name is Alix and I work from home or mobile and am fully flexible. I also work evening and weekends around your work and family life. I offer different types of massage tailored to your needs to help with: Pain, stiffness, discomfort and mobility. I also offer Advice and support for injury management or injury maintenance.</p>
             </div>
           </div>
         </div>
       </div>
       <div >
-        <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
-          <div className="row justify-content-start">
-            <div className="col-12">
-              <div className='flex mb-3 end'>  
-                <h2 className="text-dark">TREATMENTS</h2>
+        <div className="container p-5 pt-8 pt-md-10 pb-8 pb-md-10">
+          <div className='row mb-3 justify-content-between'>
+                <h2 className="text-dark">Treatments</h2>
                 <Link className="button button-primary " to="/treatments">
-                  ALL TREATMENTS
+                 All Treatments
                 </Link>
-              </div>
-              <p className=" mb-3">A little bit here about the treatments you offer and why they're important</p>
-            </div>
+          </div>
+          <p className="row mb-6">A little bit here about the treatments you offer and why they're important</p>
+          <div className="row justify-content-start">
             {markdown.map(edge => (
               <div key={edge.node.frontmatter.path} className="col-12 col-md-6 col-lg-4 mb-2">
                   <div className="feature">
@@ -60,14 +56,12 @@ const Home = (props) => {
                         <img src={withPrefix(edge.node.frontmatter.image)} />
                       </div>
                     )}
-                    <h3>{edge.node.frontmatter.title}</h3>
+                    <h3>{edge.node.frontmatter.lcTitle}</h3>
                     <div className="feature-content">
-                      
-                      <p>{edge.node.excerpt}</p>
-                    
-                    <Link className="button button-primary" to={edge.node.frontmatter.path}>
-                      VIEW {edge.node.frontmatter.title}
-                    </Link>
+                      <p>{edge.node.frontmatter.whatIsIt}</p>
+                      <Link className="button button-primary" to={edge.node.frontmatter.path}>
+                        View {edge.node.frontmatter.lcTitle}
+                      </Link>
                     </div>
                     
                 </div> 
@@ -78,7 +72,7 @@ const Home = (props) => {
         </div>
       </div>  
       <div className="bg-red">
-        <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+        <div className="container p-5 pt-8 pt-md-10 pb-8 pb-md-10">
           <div className="row justify-content-start">
             <div className="col-12">
               <h2 className="mb-3">Testimonials</h2>
@@ -102,24 +96,25 @@ const Home = (props) => {
         </div>
       </div>
       <div>
-        <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+        <div className="container p-5 pt-8 pt-md-10 pb-8 pb-md-10">
         <div className="row justify-content-start">
             <div className="col-12">
               <h2 className="text-dark">Get in touch</h2>
               <p>To book an appointment, or just get some advice please contact us on the information below.</p>
             </div>
             </div>
-          <div className="pt-4 row justify-content-start">
-            <div className="col-6">
-            <h4 className='mb-4'>Find us</h4>
-            <span><strong>ABN Sports Therapy</strong></span>
+          <div className="row justify-content-start">
+            <div className="col-md-6 pt-4">
+            <p className='mb-2'><strong>Find us</strong></p>
+ 
+              <span><strong>ABN Sports Therapy</strong></span>
               <br/>
               <span>15 Maple Gardens</span><br/>
               <span>Guisborough</span><br/>
               <span>TS14 6NY</span>
             </div> 
-              <div className='col-6'> 
-                <h4 className='mb-4'>For general enquiries or to book an appointment</h4>
+              <div className='col-md-6 pt-4'> 
+                <p className='mb-4'><strong>For general enquiries or to book an appointment</strong></p>
                 <div className='flex mb-2'>
                   <img width='25px' height='25px' src='facebook.png'  className='flex mr-4'/>
                   <a src="https://www.facebook.com/ABNSportTherapy/" target='_blank'>@ABNSportTherapy</a>
@@ -154,6 +149,8 @@ export const query = graphql`
           id
           frontmatter {
             path
+            lcTitle
+            whatIsIt
             title
             date(formatString: "DD MMMM YYYY")
             image

@@ -24,12 +24,12 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img src='/general/Logo.png' />
+              <img src='../Logo.png' />
             </Link>
           </div>
           <div className="logo-mobile">
             <Link to="/">
-              Logo
+              <img src='../Logo.png' />
             </Link>
           </div>
           <MenuMobile active={this.state.menuActive} />
