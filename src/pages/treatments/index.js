@@ -43,7 +43,7 @@ const Treatments = (props) => {
           </div>
           ))}
         </div>
-        <div className=" pt-8  row justify-content-start">
+        <div className=" pt-4  row justify-content-start">
           <div className="col-12">
             <h2 className="text-dark">What to expect</h2>
               <p>FAQs maybe?</p>

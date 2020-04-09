@@ -12,7 +12,7 @@ const Prices = props => (
     <div className="intro intro-small intro-prices">
       <h1>Prices</h1>
     </div>
-    <div className="container pt-8 pt-md-10 pb-8 pb-md-10">
+    <div className="container p-5 pt-8 pt-md-10 pb-8 pb-md-10">
     <div className="row justify-content-start pb-4">
           <div className="col-12">
             <h2 className="text-dark">Price list</h2>
@@ -20,7 +20,7 @@ const Prices = props => (
           </div>
         </div>
       <div className='row'>
-      <div className='col-6'>
+      <div className='col-md-6'>
         <Accordion defaultActiveKey="0">
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="0" style={{ width: '100%' }}>
@@ -54,7 +54,7 @@ const Prices = props => (
           </Card>
           </Accordion>
           </div>
-          <div className='col-6'>
+          <div className='col-md-6'>
           <Accordion defaultActiveKey="3">
           <Card >
             <Accordion.Toggle as={Card.Header} eventKey="3" style={{ width: '100%' }}>
